@@ -1,5 +1,4 @@
 % === Lectura del archivo CSV ===
-% Formato esperado: columna 1 = voltaje, columna 2 = frecuencia
 M = readmatrix('/MATLAB Drive/histograma/histograma2.2Vpp.txt');  
 
 voltaje_bin = M(:,1);   % valores de voltaje
@@ -41,3 +40,4 @@ title('histograma señal con 2.7 voltios pico','FontSize',16,'FontWeight','bold'
 legend([h1 h2 h3], {'Media','Media - σ','Media + σ'}, 'FontSize',12,'Location','best');
 grid on;
 set(gca,'FontSize',12,'LineWidth',1.2);
+
